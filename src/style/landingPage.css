@@ -1,0 +1,98 @@
+/* General Styles */
+.myBG {
+  height: 100vh;
+  background: url("../assets/images/bg/LOGO\ BG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.intro {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 2px 2px black;
+  letter-spacing: 10px;
+}
+
+.trending, .superhero {
+  height: auto;
+  background: url("../assets/images/bg/BG\ 2.jpg");
+  background-size: 100% 122%;
+  background-repeat: no-repeat;
+}
+
+.superhero {
+  background-position: 80% 50%;
+}
+
+.movieWrapper {
+}
+
+.movieImage {
+  height: 400px;
+  background-color: black;
+  margin: 1%;
+  padding: 0px;
+}
+
+.images {
+  height: 500px;
+}
+
+/* Responsive Styles */
+@media (max-width: 400px) {
+  .title {
+    font-size: 10rem;
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+  .trending, .superhero{
+    background-size: center;
+    background-position: 50% 11% !important;
+    
+  }
+  .button button {
+    font-size: 45px !important;
+    letter-spacing: 1px !important;
+    display: cover !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -210%);
+  }
+
+  .trending .text,
+  .superhero .text {
+    font-size: 3  rem !important;
+    text-align: center; /* Menyelaraskan teks ke tengah secara horizontal */
+    vertical-align: middle; /* Menyelaraskan teks ke tengah secara vertikal */
+    line-height: 1.5; /* Menyesuaikan jarak antar baris */
+    transform: translateY(-20%);
+    color: rgba(0, 0, 0, 0.67) !important;
+    font-weight: bold;
+    
+  }
+
+  .trending, .superhero {
+    display: center;
+    flex-wrap: wrap; /* Membungkus item ke baris berikutnya jika tidak muat */
+    justify-content: space-between; /* Menambahkan jarak antar item */
+    
+    
+  }
+  
+  .movieWrapper {
+    flex: 0 0 33.33%; /* Mengatur lebar setiap item */
+    
+  }
+
+}
